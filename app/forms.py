@@ -45,4 +45,10 @@ class EditProfileForm(FlaskForm):
             if user is not None:
                 raise ValidationError("Please use different username")
 
+
+class EmptyForm(FlaskForm):
+    submit = SubmitField("Submit")
+
+
+
 # Create form flow: install flask-wtf
