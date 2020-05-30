@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
 from flask_mail import Mail
+from flask_bootstrap import Bootstrap
 import logging, os
 from logging.handlers import SMTPHandler, RotatingFileHandler
 
@@ -14,6 +15,7 @@ migrate = Migrate(app, db)
 login = LoginManager(app)
 login.login_view = "login" # The name of the view to redirect to when the user needs to log in.
 mail = Mail(app)
+bootstrap = Bootstrap(app)
 
 
 if not app.debug:
