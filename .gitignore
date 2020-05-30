@@ -1,2 +1,7 @@
 __pycache__
 app/__pycache__
+
+*.pyc
+
+migrations/
+logs/
