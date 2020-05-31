@@ -3,5 +3,4 @@ app/__pycache__
 
 *.pyc
 
-migrations/
 logs/

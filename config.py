@@ -16,5 +16,8 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
     ADMINS = ["rakkakeren@gmail.com"]
 
+    BABEL_TRANSLATION_DIRECTORIES = os.path.join(base_dir, "app/translation")
+    LANGUAGES = ["en", "id"]
+
 
 # Config flow: var = os.environ(key) or fallback value
